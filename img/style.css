@@ -1,0 +1,88 @@
+:root {
+    --azul: #007BFF;
+    --azul-claro: #E6F0FF;
+    --branco: #FFFFFF;
+    --cinza: #F5F5F5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--cinza);
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+.cabecalho {
+    background-color: var(--azul);
+    color: var(--branco);
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--branco);
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: var(--azul-claro);
+}
+
+/* Seções principais */
+.conteudo {
+    padding: 40px 20px;
+}
+
+.secao {
+    margin-bottom: 60px;
+    background-color: var(--branco);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.1);
+    text-align: center;
+}
+
+.secao h2 {
+    color: var(--azul);
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Rodapé */
+.rodape {
+    background-color: var(--azul);
+    color: var(--branco);
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
