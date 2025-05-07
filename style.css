@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-/*Cor padrão azul*/
+/*Cor padrão verde*/
 :root {
-    --azul: #49976c;
+    --verde: #49976c;
 }
 
 body {
@@ -15,7 +15,7 @@ html {
 }
 /*Cabeçalho*/
 .cabecalho {
-    background-color: var(--azul);
+    background-color: var(--verde);
     padding: 20px 0;
 }
 .container {
@@ -107,18 +107,18 @@ html {
     margin: auto;
 }
 .apresentacao h1 {
-    color: var(--azul);
-    text-align: left;
+    color: var(--verde);
+    text-align: center;
     margin-left: 20px;
 
 }
 .apresentacao h2 {
-    text-align: left;
+    text-align: center;
     font-weight: bold;
     margin-left: 20px;
 }
 .apresentacao h3 {
-    text-align: left;
+    text-align: center;
     font-weight: unset;
     margin-left: 18px;
 }
@@ -133,7 +133,7 @@ h3 {
     unicode-bidi: isolate;
 }
 .apresentacao p {
-    text-align: left;
+    text-align: center;
     color: #333;
     margin-left: 20px;
     font-size: 22px;
@@ -284,7 +284,7 @@ p {
 
 /*Rodapé*/
 .rodape {
-    background-color: var(--azul);
+    background-color: var(--verde);
     text-align: center;
     padding: 20px;
 }
