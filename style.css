@@ -304,7 +304,7 @@ p {
 }
 .info-contato p {
     font-size: 16px;
-    line-height: 1;
+    line-height: 1.6;
     color: #333;
     margin-block-end: auto;
 }
