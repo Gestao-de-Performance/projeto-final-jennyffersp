@@ -232,7 +232,7 @@ p {
 }
 
 /* Responsivo */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .botaoCorpoClinico {
         width: 100%;
         max-width: 300px;
@@ -246,7 +246,7 @@ p {
 }
 
 /* Responsivo para telas menores */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .botaoCorpoClinico {
         width: 100%;
         max-width: 300px;
@@ -255,19 +255,21 @@ p {
 
 /*Localização*/
 .localizacao h3 {
-    font-size: 16px;
-    margin-bottom: 16px;
-    margin-left: 10px;
-    margin-block-start: 4em;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-left: -2px;
+    margin-block-start: 1em;
+    color: #2e7d59;
 }
 .localizacao p {
-    font-size: 14px;
+    font-size: 16px;
     color: #333;
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 9px;
     margin-inline-end: 0px;
+    margin-left: -1px;
     unicode-bidi: isolate;
 }
 
@@ -280,8 +282,32 @@ p {
     height: 5%;
     
 }
+.contato{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 40px 20px;
+    justify-content: center;
 
+}
+.info-contato {
+    flex: 1 1 300px;
+    max-width: 500px;
+    
+}
 
+.info-contato h2 {
+    color: #2e7d59;
+    margin-bottom: 10px;
+    font-size: 20px;
+
+}
+.info-contato p {
+    font-size: 16px;
+    line-height: 1;
+    color: #333;
+    margin-block-end: auto;
+}
 /*Rodapé*/
 .rodape {
     background-color: var(--verde);
@@ -289,7 +315,7 @@ p {
     padding: 20px;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
     .container {
         flex-direction: column;
         align-items: flex-start;
@@ -311,7 +337,7 @@ p {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 767px) {
     .logo {
         flex-direction: column;
         align-items: flex-start;
