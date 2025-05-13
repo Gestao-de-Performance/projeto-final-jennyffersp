@@ -1,0 +1,360 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/*Cor padrão verde*/
+:root {
+    --verde: #49976c;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+
+}   
+html {
+    scroll-behavior: smooth;
+}
+/*Cabeçalho*/
+.cabecalho {
+    background-color: var(--verde);
+    padding: 20px 0;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    
+}
+.logo img {
+    height: 200px
+    
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 25px; 
+    margin: 0;
+    padding: 0;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+
+
+}
+.menu li a:hover {
+    color: #49976c;
+}
+
+/*Busca*/
+.busca {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.busca input {
+    height: 18px;
+    border: 1px solid #ccc;
+    border-right: none;
+    border-radius: 4px 0 0 4px;
+    padding: 6px 10px;
+    margin: 0;
+    outline: none;
+}
+
+.busca button {
+    height: 32px;
+    width: 32px;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-radius: 0 4px 4px 0;
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.busca button img {
+    width: 16px;
+    height: 16px;
+    display: block;
+}
+
+/*Conteudo principal*/
+.conteudo {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+.apresentacao h1 {
+    color: var(--verde);
+    text-align: center;
+    margin-left: 20px;
+
+}
+.apresentacao h2 {
+    text-align: center;
+    font-weight: bold;
+    margin-left: 20px;
+}
+.apresentacao h3 {
+    text-align: center;
+    font-weight: unset;
+    margin-left: 18px;
+}
+h3 {
+    display: block;
+    font-size: 0.9em;
+    margin-block-start: 3em;
+    margin-block-end: 4em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+.apresentacao p {
+    text-align: center;
+    color: #333;
+    margin-left: 20px;
+    font-size: 22px;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 4em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+/* Seção do Corpo Clínico */
+.CorpoClinico {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+.tituloCorpoClinico {
+    font-size: 28px;
+    color: #49976c; /* Verde da Clínica do Meio */
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+/* Container flexível para os cartões */
+.displayFlex {
+    display: flex;
+    gap: 20px; /* Espaço entre os cards */
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Estilo de cada item do corpo clínico */
+.CorpoClinico {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+.tituloCorpoClinico {
+    font-size: 28px;
+    color: #49976c;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+/* Container flexível */
+.displayFlex {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Estilo dos cards */
+.botaoCorpoClinico {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 200px;
+    padding: 20px;
+    transition: transform 0.2s ease;
+}
+
+.botaoCorpoClinico:hover {
+    transform: translateY(-5px);
+}
+
+.botaoCorpoClinico img {
+    width: 30%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.botaoCorpoClinico h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.botaoCorpoClinico p {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+}
+
+/* Links sem decoração */
+.removeDecoration {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Responsivo */
+@media (max-width: 767px) {
+    .botaoCorpoClinico {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+/* Remove decoração de links */
+.removeDecoration {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Responsivo para telas menores */
+@media (max-width: 767px) {
+    .botaoCorpoClinico {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+/*Localização*/
+.localizacao h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-left: -2px;
+    margin-block-start: 1em;
+    color: #2e7d59;
+}
+.localizacao p {
+    font-size: 16px;
+    color: #333;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 9px;
+    margin-inline-end: 0px;
+    margin-left: -1px;
+    unicode-bidi: isolate;
+}
+
+.mapa-container {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin-top: 10px;
+    width: 5%;
+    height: 5%;
+    
+}
+.contato{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 40px 20px;
+    justify-content: center;
+
+}
+.info-contato {
+    flex: 1 1 300px;
+    max-width: 500px;
+    
+}
+
+.info-contato h2 {
+    color: #2e7d59;
+    margin-bottom: 10px;
+    font-size: 20px;
+
+}
+.info-contato p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin-block-end: auto;
+}
+/*Rodapé*/
+.rodape {
+    background-color: var(--verde);
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .busca {
+        margin-top: 10px;
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .busca input {
+        width: 70%;
+    }
+}
+
+@media (max-width: 767px) {
+    .logo {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .apresentacao h1,
+    .apresentacao h2,
+    .apresentacao p {
+        text-align: left;
+    }
+
+    .menu ul {
+        padding-left: 0;
+    }
+
+    iframe {
+        width: 100% !important;
+        height: auto;
+    }
+}
