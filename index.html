@@ -45,22 +45,34 @@
         </section>
         <section id="corpoclinico" class="CorpoClinico">
             <h2 class="tituloCorpoClinico">Corpo Clínico</h2>
-            <div class="displayFlex">
-                <a class="botaoCorpoClinico removeDecoration" href="#">
+            <div class="carrossel-container">
+
+                <button class="btn-carrossel esquerda" onclick="moverCarrossel(-1)">&#10094;</button>
+
+                <div class="carrossel" id="carrosselCorpoClinico">
+                    <div class="slide">
                         <img src="img/Cardiologista.png" alt="Médico 1">
                         <h3>Dr. João Silva</h3>
                         <p>Especialista em Cardiologia</p>
-                </a>
-                <a class="botaoCorpoClinico removeDecoration" href="#">
+                        
+                    </div>   
+                <div class="slide">
                     <img src="img/Pediatra.png" alt="Médico 2">
                     <h3>Dra. Maria de Paula</h3>
                     <p>Especialista em Pediatria</p>
-                </a>  
-            <a class="botaoCorpoClinico removeDecoration" href="#">
+                </div>  
+        
+            <div class="slide">
                 <img src="img/Geriatra.png" alt="Médico 3">
                 <h3>Dr. Amaral Pereira</h3>
                 <p>Especialista em Geriatria</p>
-            </a>
+
+            </div>
+
+        </div>
+
+                <button class="btn-carrossel direita" onclick="moverCarrossel(1)">&#10095;</button>
+    
             </div>
                  
         </section>
@@ -86,5 +98,8 @@
     <footer class="rodape">
         <p>2025 © Clínica do Meio. Todos os direitos reservados.<p>
     </footer>
+
+    <script src="carrossel.js" defer></script>
+    
 </body>
 </html>

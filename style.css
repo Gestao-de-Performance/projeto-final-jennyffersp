@@ -161,6 +161,55 @@ p {
     font-weight: 600;
 }
 
+.carrossel-container {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.carrossel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  gap: 20px;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 10px;
+}
+
+.slide img {
+  width: 150px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.btn-carrossel {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 128, 0, 0.6);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 5px 10px;
+  cursor: pointer;
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.btn-carrossel.esquerda {
+  left: 10px;
+}
+
+.btn-carrossel.direita {
+  right: 10px;
+}
+
+
 /* Container flexível para os cartões */
 .displayFlex {
     display: flex;
@@ -173,7 +222,7 @@ p {
 .CorpoClinico {
     padding: 40px 20px;
     text-align: center;
-    background-color: #f5f5f5;
+    background-color: #ccc;
 }
 
 .tituloCorpoClinico {
@@ -207,7 +256,7 @@ p {
 }
 
 .botaoCorpoClinico img {
-    width: 30%;
+    width: 70%;
     height: auto;
     border-radius: 8px;
     margin-bottom: 15px;
@@ -218,7 +267,6 @@ p {
     color: #333;
     margin-bottom: 8px;
 }
-
 .botaoCorpoClinico p {
     font-size: 14px;
     color: #666;
