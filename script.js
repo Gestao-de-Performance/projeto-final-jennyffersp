@@ -16,3 +16,19 @@ function moverCarrossel(direcao) {
   const deslocamento = -indiceSlide * 100;
   carrossel.style.transform = `translateX(${deslocamento}%)`;
 }
+
+window.addEventListener('scroll', function () {
+  const parallaxSections = document.querySelectorAll('.parallax');
+
+  parallaxSections.forEach(section => {
+    const offset = window.pageYOffset;
+    const speed = 0.4;
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.offsetHeight;
+    const scrollPos = offset - sectionTop;
+
+    if (scrollPos >= -sectionHeight && scrollPos <= window.innerHeight) {
+      section.style.setProperty('--scrollY', scrollPos * speed + 'px');
+    }
+  });
+});

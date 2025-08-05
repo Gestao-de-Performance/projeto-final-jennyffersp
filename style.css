@@ -406,3 +406,24 @@ p {
         height: auto;
     }
 }
+
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+/* Estilo da segunda imagem (seção contato) */
+#contato {
+  background-image: url('img/imagem\ 2.jpg');
+}
+
+/* Para garantir contraste de texto */
+#sobre h1, #sobre h2, #sobre h3, #sobre p,
+#contato h2, #contato p {
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
